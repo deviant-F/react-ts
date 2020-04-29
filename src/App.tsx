@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.scss';
 
-import logo from './logo.svg';
+import logo from './static/images/logo.svg';
 
 const App = () => (
   <div className="App">
