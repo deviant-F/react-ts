@@ -5,8 +5,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint . --ext .ts,.tsx",
-    "lint:fix": "eslint . --fix --ext .ts,.tsx ",
+    "lint": "eslint . --ext .ts,.tsx && stylelint **/*.scss",
+    "lint:fix": "eslint . --fix --ext .ts,.tsx && stylelint **/*.scss --fix",
     "precommit": "echo 'Pre-commit checks' && lint-staged",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -43,6 +43,10 @@
     "lint-staged": "^10.2.0",
     "pre-commit": "^1.2.2",
     "prettier": "^2.0.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.17.1",
     "typescript": "^3.8.3"
   },
   "browserslist": {
